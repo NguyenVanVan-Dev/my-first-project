@@ -1,0 +1,55 @@
+<html><head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	* {
+  		box-sizing: border-box;
+		
+	}
+	body {
+		 display: block;
+ 		 margin: 0px;
+	}	
+	.khungtren {
+		height: 100px;
+		width: auto;
+		background-image: url(../Images/sky-wallpaper-anime_105141991.jpg);
+		color: aliceblue;
+		text-align: center;
+		padding: 15px;
+	}
+	.khungtrai {
+		float: left;
+		height: 500px;
+		width: 20%;
+		background: #8A8A8A;
+		text-decoration: none;
+		padding: 8px;
+	}
+	.noidung {
+		float: right;
+		height: 500px;
+		width: 80%;
+		padding: 8px;
+	p {
+    	text-indent: 30px;
+}
+	}
+</style>
+</head>
+
+<body>
+	<div class="khungtren"><h1><i>TỐC ĐỘ CỦA THÔNG TIN</i></h1></div>
+	<div class="khungtrai">
+		<h3><center>TIN TỨC</center></h3>
+		<a href="tinkt.html">Tin kinh tế</a><br>
+		<a href="tinct.html">Tin chính trị</a>
+	</div><div class="noidung"><h1><center>Giá cà phê hôm nay 26/3: Dấu hiệu tích cực</center></h1><br><p>Giá cà phê thế giới hôm nay 26/3 dịch bệnh khiến giá cà phê chưa có được thời cơ bứt phá. Thị trường cà phê thế giới đang chịu ảnh hưởng vô cùng nặng nề cả hai chiều mua - bán
+
+Giá cà phê robusta 3/2020 đang dao động ở mức 1324-1300 (cao nhất - thấp nhất)<br>
+Giá cà phê arabica tháng 3/2020 đang dao động ở mức 112.20-116.90 (cao nhất - thấp nhất).<br>
+Nguyên nhân của việc giá cà phê robusta giảm do chịu sức ép dư cung. Nước sản xuất cà phê arabica chế biến ướt lớn nhất thế giới là Colombia mới đây đã thành lập nên quỹ bình ổn giá cà phê có trị giá gần 64 triệu đồng/lượng với mục đích để bảo vệ những người nông dân trước biến động của thị trường.</p></div>
+	
+
+
+</body></html>

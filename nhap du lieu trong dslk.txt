@@ -1,0 +1,10 @@
+void input(int a[], int *n){
+	int ok,num;
+	do{		printf("input a number:"); scanf("%d",&num);
+		ok=(num!=0);
+		if (ok) {
+			a[*n]=num;
+			(*n)++;
+		}
+	}while (ok);
+}
