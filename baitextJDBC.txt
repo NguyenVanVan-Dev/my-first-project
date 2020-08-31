@@ -1,0 +1,61 @@
+package gui;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+
+
+public class taikhoan extends JFrame {
+	JLabel lblemail = new JLabel("email");
+	JTextField tfemail = new JTextField(20);
+	JLabel lblpass = new JLabel("pass");
+	JTextField tfpass = new JTextField(20);
+	JButton btnregis = new JButton("regis");
+	
+	public taikhoan () {
+		Container cont = this.getContentPane();
+		setLayout(new FlowLayout());
+		cont.add(lblemail);
+		cont.add(tfemail);
+		cont.add(lblpass);
+		cont.add(tfpass);
+		cont.add(btnregis);
+		btnregis.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				try {
+					//  ket noi csdl
+					Class.forName("com.mysql.jdbc.Driver");
+					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fbook","root",""); 
+					// chen vao bang acccount
+					Statement s = con.createStatement();
+					int n= s.executeUpdate("Insert into account values('"+tfemail.getText()+"','"+tfpass.getText()+"')");
+					JOptionPane.showConfirmDialog(null, "ok");
+					} 
+				catch (Exception e2) {
+					// TODO: handle exception
+					e2.printStackTrace();
+				}				
+			}
+		});
+		pack();
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		taikhoan obj= new taikhoan();
+		obj.show();
+	}
+}
